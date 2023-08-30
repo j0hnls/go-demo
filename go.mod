@@ -1,4 +1,4 @@
-module github.com/johnls/go-demo
+module github.com/j0hnls/go-demo
 
 go 1.20
 

@@ -4,20 +4,20 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/j0hnls/go-demo"
+	pb "github.com/j0hnls/go-demo/proto"
 	"google.golang.org/grpc"
 )
 
-const(
+const (
 	port = ":8080"
 )
 
-type helloServer struct{
+type helloServer struct {
 	pb.GreetServiceServer
 }
 
-func main(){
-	lis, err := net.Listen("tcp",port)
+func main() {
+	lis, err := net.Listen("tcp", port)
 
 	if err != nil {
 		log.Fatalf("Failed to start the server %v", err)
